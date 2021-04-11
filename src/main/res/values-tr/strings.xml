@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="appname">Capital Quiz</string>
+
+    <string name="country">Ülke</string>
+    <string name="capital">Başkent</string>
+    <string name="chooseMode">Mod Seçimi</string>
+
+
+
+    <string name="chosen_capital">Başkent Modu</string>
+    <string name="chosen_country">Ülke Modu</string>
+    <string name="all">Hepsi</string>
+    <string name="europe">Avrupa</string>
+    <string name="asia">Asya</string>
+    <string name="north_america">Kuzey Amerika</string>
+    <string name="south_america">Güney Amerika</string>
+    <string name="africa">Afrika</string>
+    <string name="easy">Kolay</string>
+    <string name="hard">Zor</string>
+
+
+
+</resources>

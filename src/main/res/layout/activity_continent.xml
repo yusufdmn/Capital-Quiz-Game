@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/worlddd"
+    android:onClick="aaa"
+    tools:context=".ContinentActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Choose Continent"
+        android:textAlignment="center"
+        android:textColor="#FFDD00"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/allButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/allButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="5dp"
+        android:background="#7300C4FF"
+        android:fontFamily="@font/montserrat"
+        android:onClick="allF"
+        android:text="@string/all"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#AE003D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/europeButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/europeButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="5dp"
+        android:background="#7300C4FF"
+        android:fontFamily="@font/montserrat"
+        android:onClick="europeF"
+        android:text="@string/europe"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#AE003D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/asiaButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/asiaButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="50dp"
+        android:background="#7300C4FF"
+        android:backgroundTintMode="src_atop"
+        android:fontFamily="@font/montserrat"
+        android:onClick="asiaF"
+        android:text="@string/asia"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#AE003D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/northAmericaButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:background="#7300C4FF"
+        android:fontFamily="@font/montserrat"
+        android:onClick="northAmericaF"
+        android:text="@string/north_america"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#AE003D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asiaButtonId" />
+
+    <Button
+        android:id="@+id/southAmericaButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:background="#7300C4FF"
+        android:fontFamily="@font/montserrat"
+        android:onClick="southAmericaF"
+        android:text="@string/south_america"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#AE003D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/northAmericaButtonId" />
+
+    <Button
+        android:id="@+id/africaButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:background="#7300C4FF"
+        android:fontFamily="@font/montserrat"
+        android:onClick="africaF"
+        android:text="@string/africa"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#AE003D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/southAmericaButtonId" />
+
+    <TextView
+        android:id="@+id/modeTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#AE003D"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/allButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/africaButtonId">
+
+        <Button
+            android:id="@+id/easyId"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="40dp"
+            android:background="#BF04FFB0"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/easy"
+            android:textColor="#AE003D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/hardId"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#BF04FFB0"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/hard"
+            android:textColor="#AE003D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

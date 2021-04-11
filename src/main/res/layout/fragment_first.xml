@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/worlddd"
+    tools:context=".firstFragment">
+
+    <Button
+        android:id="@+id/choice1Id"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="#735EF4F4"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="aaa"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#A3003A"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/choice2Id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/choice2Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:background="#735EF4F4"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="aaa"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#A3003A"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/choice3Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:background="#735EF4F4"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="aaa"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#A3003A"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice2Id" />
+
+    <Button
+        android:id="@+id/choice4Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:background="#735EF4F4"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="aaa"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#A3003A"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice3Id" />
+
+
+    <Button
+        android:id="@+id/questionId"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#73F4C5F0"
+        android:fontFamily="@font/capriola"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#AE003D"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/choice1Id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="39dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/questionId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tikkk" />
+
+    <TextView
+        android:id="@+id/trueId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="5"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/questionId"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/falseId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:fontFamily="sans-serif-light"
+        android:text="5"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/questionId"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/questionOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="5 / 15"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice4Id" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="39dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/questionId"
+        app:layout_constraintStart_toEndOf="@+id/trueId"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/falseee" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/questionOrderId"
+        tools:layout_editor_absoluteY="23dp" />
+
+    <TextView
+        android:id="@+id/bestId"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Best: 10✓"
+        android:textColor="#9500FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/questionId"
+        app:layout_constraintEnd_toEndOf="@+id/questionId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-2309141602496848/9802555369"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

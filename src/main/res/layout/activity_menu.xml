@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/worlddd"
+    tools:context=".MenuActivity">
+
+    <ImageButton
+        android:id="@+id/engId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/englandyuvarlak" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/chooseMode"
+            android:textAlignment="center"
+            android:textColor="#AE003D"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/capitalButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:background="#7300C4FF"
+            android:fontFamily="@font/montserrat"
+            android:onClick="capitalF"
+            android:text="@string/country"
+            android:textAllCaps="false"
+            android:textColor="#AE003D"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/flagButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#7300C4FF"
+            android:fontFamily="@font/montserrat"
+            android:onClick="countryF"
+            android:text="@string/capital"
+            android:textAllCaps="false"
+            android:textColor="#AE003D"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/trId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/engId"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/turkeyyuvarlak" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-2309141602496848/9802555369"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+    <ImageButton
+        android:id="@+id/starId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#00FD1E1E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/star" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
